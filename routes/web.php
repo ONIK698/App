@@ -14,7 +14,16 @@
 
 
 Route::get('/', function () {
-    return view('form');
+    return view('welcome');
+});
+
+Route::group(['middleware'=>'guest'], function(){
+	Route::get('/register','Auth\RegisterController@showRegistrationForm')->name('register');
+	Route::post('/register','Auth\RegisterController@register');
+});
+
+Route::group(['middleware'=>'auth'], function(){
+	Route::get('/my/account','AccountController@index')->name('account');
 });
 
 Auth::routes();
