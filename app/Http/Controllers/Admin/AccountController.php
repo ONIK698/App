@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 
@@ -8,6 +8,6 @@ class AccountController extends Controller
 {
 	public function index()
     {
-        return view('account.index');
+        return view('admin.index');
     }
 }
