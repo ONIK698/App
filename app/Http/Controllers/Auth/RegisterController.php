@@ -29,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/my/account';
 
     /**
      * Create a new controller instance.
@@ -46,7 +46,7 @@ class RegisterController extends Controller
         try{
             $this->validator($request->all())->validate();
         }catch(\Exception $e){
-            dd("УПС");
+            dd("У1ПС");
         }
         $email = $request->input('email');
         $password = $request->input('password');

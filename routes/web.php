@@ -18,13 +18,18 @@ Route::get('/', function () {
 });
 
 Route::group(['middleware'=>'guest'], function(){
+	//Regisret
 	Route::get('/register','Auth\RegisterController@showRegistrationForm')->name('register');
 	Route::post('/register','Auth\RegisterController@register');
+	//Login
+	Route::get('/login','Auth\LoginController@showLoginForm')->name('login');
+	Route::post('/login','Auth\LoginController@login');
 });
 
 Route::group(['middleware'=>'auth'], function(){
 	Route::get('/my/account','AccountController@index')->name('account');
 });
+
 
 Auth::routes();
 

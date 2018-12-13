@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+Use Auth;
+use App\Entities\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+//use Illuminate\Support\Facades;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -25,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/my/account';
 
     /**
      * Create a new controller instance.
@@ -35,5 +38,24 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+    public function login(Request $request)
+    {
+        try{
+            $this->validate($request, ['email' => 'required|min:3|max:225',
+                'password' => 'required|min:6|'
+        ]);
+            $remeber = $request->has('remember') ? true : false;
+            if(Auth::attempt([
+                'email'=> $request->input('email'),
+                'password'=> $request->input('password')], $remeber)){
+                return redirect(route('account'))->with('success', trans('messages.auth.successLogin'));
+            }
+            return back()->with('error', trans('messages.auth.errorLogin'));
+
+        }catch(ValidationException $e){
+            \Log::error($e->getMessage);
+            return back()->with('error', trans('messages.auth.errorLogin'));
+        }
     }
 }
