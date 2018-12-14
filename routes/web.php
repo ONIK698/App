@@ -34,8 +34,19 @@ Route::group(['middleware'=>'auth'], function(){
 	Route::get('/my/account','AccountController@index')->name('account');
 
 //Admin
-	Route::group(['middleware'=>'admin'], function(){
-		Route::get('/admin','Admin\AccountController@index')->name('admin');
+	Route::group(['middleware'=>'admin', 'prefix'=>'admin'], function(){
+		Route::get('/','Admin\AccountController@index')->name('admin');
+
+		Route::get('/categories','Admin\CategoriesController@index')->name('categories');
+
+		Route::get('/categories/add','Admin\CategoriesController@addCategories')->name('categories.add');
+		Route::post('/categories/add','Admin\CategoriesController@addRequestCategory');
+		Route::get('/categories/edit/(id)','Admin\CategoriesController@editCategories')
+		    ->where('id', '\d+')
+		    ->name('categories.edit');
+		Route::delete('/categories/delete','Admin\CategoriesController@deleteCategories')->name('categories.delete');
+
+
 	});
 
 });

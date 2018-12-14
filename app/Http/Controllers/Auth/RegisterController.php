@@ -46,7 +46,7 @@ class RegisterController extends Controller
         try{
             $this->validator($request->all())->validate();
         }catch(\Exception $e){
-            dd("У1ПС");
+        dd("У1ПС");
         }
         $email = $request->input('email');
         $password = $request->input('password');
