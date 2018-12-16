@@ -14,7 +14,8 @@
               <th>Дата добавления</th>
               <th>Действия</th>
           </tr>
-          @foreach($categories as $category)               <tr>
+          @foreach($categories as $category)
+              <tr>
                <td>{{$category->id}}</td>
                <td>{{$category->title}}</td>
                <td>{!! $category->description  !!}</td>

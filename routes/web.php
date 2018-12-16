@@ -41,9 +41,14 @@ Route::group(['middleware'=>'auth'], function(){
 
 		Route::get('/categories/add','Admin\CategoriesController@addCategories')->name('categories.add');
 		Route::post('/categories/add','Admin\CategoriesController@addRequestCategory');
-		Route::get('/categories/edit/(id)','Admin\CategoriesController@editCategories')
+
+		Route::get('/categories/edit/{id}','Admin\CategoriesController@editCategory')
 		    ->where('id', '\d+')
 		    ->name('categories.edit');
+
+		Route::post('/categories/edit/{id}','Admin\CategoriesController@editRequestCategory')
+		    ->where('id', '\d+');
+
 		Route::delete('/categories/delete','Admin\CategoriesController@deleteCategories')->name('categories.delete');
 
 
