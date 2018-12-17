@@ -6,8 +6,9 @@
         <form method="post">
             {!! csrf_field() !!}
         <p>Введите наименование категории:<br><input type="text" name="title" value="{{$category->title}}" class="form-control" required> </p>
-        <p>Текст категории:<br><textarea name="description" class="form-control">{!!$category->description!!}"</textarea></p>
+        <p>Текст категории:<br><textarea name="description" class="form-control">{!!$category->description!!}</textarea></p>
         <button type="submit" class="btn btn-success" style="cursor: pointer; float: right;">Редактировать</button>
+        <a href="/admin/categories"><button type="button" src="/articles" class="btn btn-success" style="cursor: pointer; float: left;">Назад</button></a>
         </form>
     </main>
 @stop

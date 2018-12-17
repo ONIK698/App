@@ -12,7 +12,7 @@ class Article extends Model
         'title',
         'author',
         'short_text',
-        'full_text',
+        'full_text'
         //'feedback_id'
     ];
 

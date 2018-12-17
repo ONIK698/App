@@ -26,6 +26,7 @@
         <!-- <p>Отзывы:<br><textarea name="feedback" class="form-control"></textarea></p> -->
         <br><br>
         <button type="submit" class="btn btn-success" style="cursor: pointer; float: right;">Добавить</button>
+        <a href="/admin/articles"><button type="button" src="/articles" class="btn btn-success" style="cursor: pointer; float: left;">Назад</button></a>
         </form>
     </main>
 @stop
