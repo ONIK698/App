@@ -13,9 +13,13 @@
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', 'CategoriesController@index');
+
+//blog
+Route::get('/article/{id}/{slug}.html','CategoriesController@showCategory')->name('blog.show');
 
 Route::group(['middleware'=>'guest'], function(){
 	//Regisret
