@@ -19,7 +19,7 @@ class CreateArticlesTable extends Migration
             $table->text('short_text');
             $table->text('full_text');
             $table->string('author')->nullable();
-            $table->integer('feedback_id');
+            $table->integer('feedback_id')->default(0);
             $table->timestamps();
         });
     }
