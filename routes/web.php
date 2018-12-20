@@ -16,7 +16,9 @@
 // Route::get('/', function () {
 //     return view('index');
 // });
-Route::get('/', 'CategoriesController@index');
+//Route::get('/', 'CategoriesController@index');
+Route::get('/', 'AccountController@index');
+
 
 //blog
 Route::get('/article/{id}/{slug}.html','CategoriesController@showCategory')->name('blog.show');
@@ -35,7 +37,10 @@ Route::group(['middleware'=>'auth'], function(){
 		\Auth::logout();
 		return redirect(route('login'));
 	})->name('logout');
-	Route::get('/my/account','AccountController@index')->name('account');
+	Route::get('/account','AccountController@indexCAT')->name('account');
+	Route::get('/account/art','AccountController@indexART')->name('art');
+	//Route::get('/account','AccountController@index')->name('account');
+	//Route::get('/account/art','AccountController@indexART')->name('art');
 
 //Admin
 	Route::group(['middleware'=>'admin', 'prefix'=>'admin'], function(){

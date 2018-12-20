@@ -1,138 +1,324 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="portfolio template based on HTML5">
+    <meta name="keywords" content="onepage, developer, resume, cv, personal, portfolio, personal resume, clean, modern">
+    <meta name="author" content="MouriTheme">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
+    <!--template title-->
+    <title>MAHPOEN - Personal Portfolio HTML Template</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!--==========Favicon==========-->
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/temp/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/temp/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/temp/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/temp/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/temp/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/temp/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/temp/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/temp/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/temp/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/temp/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/temp/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/temp/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/temp/avicon/favicon-16x16.png">
+    <link rel="manifest" href="/temp/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/temp/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- Bootstrap core CSS -->
-    <link href="/blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--========== Theme Fonts ==========-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700,800" rel="stylesheet"> -->
 
-    <!-- Custom fonts for this template -->
-    <link href="/blog/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="/temp/css/font-awesome.min.css">
 
-    <!-- Plugin CSS -->
-    <link href="/blog/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="/temp/css/bootstrap.min.css">
 
-    <!-- Custom styles for this template -->
-    <link href="/blog/css/creative.min.css" rel="stylesheet">
+    <!--Animate css-->
+    <link rel="stylesheet" href="/temp/css/animate.css">
 
-  </head>
+    <!--Animated headline css-->
+    <link rel="stylesheet" href="/temp/css/jquery.animatedheadline.css">
+    
+  <!--Owl carousel css-->
+  <link rel="stylesheet" href="/temp/css/owl.carousel.css">
+  <link rel="stylesheet" href="/temp/css/owl.theme.default.css">
+    
+  <!--Magnific popup css-->
+  <link rel="stylesheet" href="/temp/css/magnific-popup.css">
+    
+  <!--Normalizer css-->
+  <link rel="stylesheet" href="/temp/css/normalize.css">
 
-  <body id="page-top">
+    <!--Theme css-->
+    <link rel="stylesheet" href="/temp/css/style.css">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Главная</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <!--Responsive css-->
+    <link rel="stylesheet" href="/temp/css/responsive.css">
+</head>
+<body>
+
+    <!--preloader starts-->
+
+
+    <div class="loader_bg"><div class="loader"></div></div>
+
+
+    <!--preloader ends-->
+
+    <!--navigation area starts-->
+
+    <header class="nav-area navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <!--main menu starts-->
+
+                <div class="col-md-12">
+                    <div class="main-menu">
+                        <div class="navbar navbar-cus">
+                            <div class="navbar-header">
+                                <a href="index.html" class="navbar-brand"><span class="logo">mason</span></a> <!--edit site name here-->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse">
+                                <nav>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active"><a href="#home">Home</a></li>
+                                        <li><a href="#cars">Cars</a></li>
+                                        <li><a href="#contact-form">Contact</a></li>
+                                        <li><a href="{{url('logout')}}">Logout</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--main menu ends-->
+            </div>
         </div>
-      </div>
-    </nav>
-
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Хочешь подобрать авто, но нет денег на покупку в салоне? </strong>
-            </h1>
-            <hr>
-            <h2 class="text-uppercase">
-              <strong>Ты точно по адресу! </strong>
-            </h2>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">У нас ты найдешь не самые лучше варианты, но зато дешево, хоть и сердито. просто листай ниже и выбери подходящий тебе тип кузова</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Почему я еще здесь</a>
-          </div>
-        </div>
-      </div>
     </header>
+    <!--navigation area ends-->
 
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
-          </div>
+    <!--Banner area starts-->
+
+    <div class="banner-area" id="home">
+        <div class="banner-table">
+            <div class="banner-table-cell">
+                <div class="welcome-text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <section class="intro animate-scale">
+
+                                    <h3>Welcome to My Website</h3>
+
+                                    <h1 class="ah-headline">
+
+                                        <span class="ah-words-wrapper">
+                                            <b class="is-visible">Mason Smith</b> <!--edit the name to your name-->
+                                            <b>Web Designer</b> <!--edit the designation if you are in different profession-->
+                                            <b>Photographer</b> <!--edit the designation if you are in different profession-->
+                                            <b>Web Developer</b> <!--edit the designation if you are in different profession-->
+                                        </span>
+                                    </h1>
+
+                                    <a href="#contact" class="banner-btn">Contact me</a>
+
+
+                                </section>
+
+                                <div class="clearfix"></div>
+
+                                <a class="mouse-scroll hidden-xs" href="#about">
+                                    <span class="mouse">
+                                        <span class="mouse-movement"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
 
-    @yield('content')
 
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
-      </div>
-    </section>
+<div id="cars">
+@yield('content')
+</div>
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-          </div>
+    <!--contact area ends-->
+
+    <!--ГУГЛ КАРТА-->
+
+<!--     <div class="brand-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 col-sm-3">
+                    <div class="brand-logo-img wow fadeInDown" data-wow-delay="0.2s">
+                        <img src="/temp/images/brand/brand-1.png" alt="brand image"> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-3">
+                    <div class="brand-logo-img wow fadeInDown" data-wow-delay="0.4s">
+                        <img src="/temp/images/brand/brand-2.png" alt="brand image"> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-3">
+                    <div class="brand-logo-img wow fadeInDown" data-wow-delay="0.6s">
+                        <img src="/temp/images/brand/brand-3.png" alt="brand image"> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-3">
+                    <div class="brand-logo-img wow fadeInDown" data-wow-delay="0.8s">
+                        <img src="/temp/images/brand/brand-4.png" alt="brand image"> 
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
-            <p>123-456-6789</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
-            </p>
-          </div>
+    </div> -->
+
+    <!--Brand area ends-->
+
+    <!--Footer Area Starts-->
+                            <div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
+                            <div class="row">
+                                <div class="col-md-7 col-xs-12">
+                                    <div class="por-img">
+                                        <img src="/temp/images/portfolio/port1.png" alt="portfolio image" class="img-responsive"> <!--edit image-->
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xs-12">
+                                    <div class="por-text">
+                                        <h2>My Project Title</h2> <!--your project title-->
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, delectus deserunt eum eveniet, illo iste magni nobis non omnis quia</p>
+                                        <div class="por-text-details">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <p>Client: </p>
+                                                    <p>Completed:</p>
+                                                    <p>Type:</p>
+                                                    <p>link:</p>
+                                                </div>
+                                                <div class="col-xs-offset-1 col-xs-7">
+                                                    <p>Дод ру</p> <!--edit here-->
+                                                    <p>15/03/2018</p> <!--edit here-->
+                                                    <p>WordPress Site</p> <!--edit here-->
+                                                    <p>www.reebok.com</p> <!--edit here-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                <div class="col-md-10 col-md-offset-1">
+                    <form id="contact-form" method="post" action="contact.php" class="wow fadeInDown" data-wow-delay="1.2s">
+
+                        <div class="messages"></div> <!--you can change the message in contact.php file -->
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required="required" data-error="Fullname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required="required" data-error="Leave a message for me"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-send" value="">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <p>&copy; All Right Reserved By <a href="https://www.codester.com/user/MouriTheme/" target="_blank">MouriTheme</a></p> <!--edit here-->
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="/blog/vendor/jquery/jquery.min.js"></script>
-    <script src="/blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Footer Area Ends-->
 
-    <!-- Plugin JavaScript -->
-    <script src="/blog/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="/blog/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="/blog/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    
 
-    <!-- Custom scripts for this template -->
-    <script src="/blog/js/creative.min.js"></script>
 
-  </body>
 
+    <!--Latest version JQuery-->
+    <script src="/temp/js/jquery-3.2.1.min.js"></script>
+
+    <!--Bootstrap js-->
+    <script src="/temp/js/bootstrap.min.js"></script>
+
+  <!--Magnific popup js-->
+  <script src="/temp/js/jquery.magnific-popup.js"></script>
+
+  <!--Owl Carousel js-->
+  <script src="/temp/js/owl.carousel.js"></script>
+
+  <!--wow js-->
+  <script src="/temp/js/wow.min.js"></script>
+
+    <!--Animated headline js-->
+    <script src="/temp/js/jquery.animatedheadline.js"></script>
+    
+    <!--Validator js-->
+    <script src="/temp/js/jquery.waypoints.js"></script>
+    
+  <!--counter up js-->
+  <script src="/temp/js/jquery.counterup.min.js"></script>
+
+    <!--Validator js-->
+    <script src="/temp/js/validator.js"></script>
+
+    <!--Contact js-->
+    <script src="/temp/js/contact.js"></script>
+
+    <!--Main js-->
+    <script src="/temp/js/main.js"></script>
+    
+    <script>
+
+  </script>
+</body>
 </html>

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Entities\Category;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $objCategory = new Category();
+        $categories = $objCategory->get();
+        return view('index', ['categories' => $categories]);
+        // return view('home');
     }
 }
