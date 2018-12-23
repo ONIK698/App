@@ -17,7 +17,9 @@ class AccountController extends Controller
     {
         $objArticle = new Article();
         $articles = $objArticle->get();
-        return view('account.ART', ['articles' => $articles]);
+        $objCategory = new Category();
+        $categories = $objCategory->get();
+        return view('account.ART', ['articles' => $articles,'categories' => $categories]);
         // return view('home');
     }
         public function indexCAT()

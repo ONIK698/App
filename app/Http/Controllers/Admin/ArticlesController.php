@@ -27,11 +27,12 @@ class ArticlesController extends Controller
     }
     public function addRequestArticle(ArticleRequest $request)
     {
-    	//dd($request->all());
+    	dd($request->all());
         $objArticle = new Article();
        // $objCategoryArticle = new CategoryArticle();
        $fullText = $request->input('full_text') ?? null;
        $objArticle= $objArticle->create([
+           // 'categories_id'=>(int)$request->input('categories'),
            'title'       => $request->input('title'),
            'short_text'  => $request->input('short_text'),
            'full_text'   => $fullText,

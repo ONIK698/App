@@ -197,7 +197,7 @@
 
     <!--Footer Area Starts-->
 
-                            <div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
+                        <div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
                             <div class="row">
                                 <div class="col-md-7 col-xs-12">
                                     <div class="por-img">
@@ -206,7 +206,7 @@
                                 </div>
                                 <div class="col-md-5 col-xs-12">
                                     <div class="por-text">
-                                        <h2>My Project Title</h2> <!--your project title-->
+                                        <h2></h2> <!--your project title-->
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, delectus deserunt eum eveniet, illo iste magni nobis non omnis quia</p>
                                         <div class="por-text-details">
                                             <div class="row">
