@@ -7,9 +7,9 @@ content=width=device-width, user-scalable-no, initial-scale=1.0, maximum-scale=1
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>document</title>
 <body>
-<h1>Обратная связь от клиента<h1>
-<p>Имя {{$name}}</p>
-<p>Email {{$email}}</p>
-<p>Сообщение {{$msg}}</p>
+<h1>Сообщение от клиента!<h1>
+<p>Имя :       {{$name}}</p>
+<p>Email :     {{$email}}</p>
+<p>Сообщение : {{$msg}}</p>
 </body>
 </html>

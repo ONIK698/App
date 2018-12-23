@@ -29,6 +29,6 @@ class MailClass extends Mailable
     public function build()
     {
         return $this->view('emails.contact-mail')->with(['name'=>$this->name,'email'=>$this->email,'msg'=>$this->msg])
-        ->subject('новое письмо');
+        ->subject('Обратная связь');
     }
 }

@@ -41,6 +41,9 @@ Route::group(['middleware'=>'auth'], function(){
 	Route::get('/account/art','AccountController@indexART')->name('art');
 	//Route::get('/account','AccountController@index')->name('account');
 	//Route::get('/account/art','AccountController@indexART')->name('art');
+		Route::get('/', function(){
+		return redirect(route('account'));
+	});
 
 //Admin
 	Route::group(['middleware'=>'admin', 'prefix'=>'admin'], function(){
@@ -73,10 +76,14 @@ Route::group(['middleware'=>'auth'], function(){
 //___
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
-//Route::get('send', 'mailController@send');
+// Route::get('sendm', 'mailController@send');
 
-Route::post('send', 'mailController@send_form');
+// Route::post('send', 'mailController@send_form');
 
-
+//Обратная связь
+Route::get('/send', function () {
+    return view('home');
+    });
+Route::post('/account', 'mailController@send_form');

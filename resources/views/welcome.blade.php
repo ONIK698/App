@@ -91,7 +91,7 @@
                             <div class="navbar-collapse collapse">
                                 <nav>
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="{{route('login')}}">Login</a></li>
+                                        <li><a href="{{route('logout')}}">Login</a></li>
                                         <li><a href="{{url('register')}}">Register</a></li>
                                     </ul>
                                 </nav>
@@ -122,7 +122,7 @@
                                             <b class="is-visible">Mason Smith</b> <!--edit the name to your name-->
                                             <b>Web Designer</b> <!--edit the designation if you are in different profession-->
                                             <b>Photographer</b> <!--edit the designation if you are in different profession-->
-                                            <b>ИДИ НАХУЙ</b> <!--edit the designation if you are in different profession-->
+                                            <b>Здесь может быть ваша реклама</b> <!--edit the designation if you are in different profession-->
                                         </span>
                                     </h1>
 

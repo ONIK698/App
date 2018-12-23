@@ -9,10 +9,16 @@ content=width=device-width, user-scalable-no, initial-scale=1.0, maximum-scale=1
 <title>document</title>
 <body>
 <h1>Send mail<h1>
-{!! Form::open(['url' => 'send']) !!}
+<br>  <p>Ваше Имя</p>
+{!! Form::open(['url' => 'account']) !!}
+  <p>Ваше Имя</p>
  {{Form::text('name')}}
+ 	<p>Ваш Email</p>
     {{Form::text('email')}}
+    <p>Ваше сообщение разработчику</p>
+    <br>
     {{Form::textarea('msg')}}
+    <br>
     {{Form::submit('send')}}
 {!! Form::close() !!}
 </body>

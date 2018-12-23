@@ -6,6 +6,7 @@
         <br>
         <table class="table table-bordered">
             <tr>
+            	<th>id</th>
                 <th>E-mail</th>
                 <th>Роль</th>
                 <th>Дата регистрации</th>

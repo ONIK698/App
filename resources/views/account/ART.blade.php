@@ -17,7 +17,7 @@
         <div class="portfolio-items">
 @foreach($articles as $article)
 <?php
-  if(foo($article)==0){
+  if(foo($article)==2){
     echo "                    <div class='col-md-4 col-sm-6 col-xs-12 no-pad'>          
                         <div id='inline-popups' class='port-box'>
                           
