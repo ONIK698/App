@@ -63,6 +63,8 @@ Route::group(['middleware'=>'auth'], function(){
 		Route::post('/articles/edit/{id}','Admin\ArticlesController@editRequestArticles')
 		    ->where('id', '\d+');
 		Route::delete('/articles/delete','Admin\ArticlesController@deleteArticle')->name('articles.delete');
+//Users
+		Route::get('/users','Admin\UsersController@index')->name('users');
 
 	});
 
