@@ -42,15 +42,13 @@
                                 <div class='row'>
                                   <div class='col-md-5 col-xs-12'>
                                     <div class='por-text'>
-                                      <h2>$article->title</h2>
-                                        <p>Вставить текст</p>
+                                      <h4>$article->title</h4>
                                           <div class='por-text-details'>
-                                            <div class='row'>
-                                              <div class='col-xs-4'>
-                                                <p>Client: $article->short_text</p>
-                                                <p>Completed:$article->full_text</p>
-                                                <p>Type:</p>
-                                                <p>link:</p>
+                                            <div>
+                                              <div>
+                                                <p>Короткое описание: $article->short_text</p>
+                                                <p>Полное описание:$article->full_text</p>
+                                                <p>Связь с продавцом:$article->author</p>
                                               </div>
                                             </div>
                                           </div>                                      

@@ -32,7 +32,7 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" name="Sign_in" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+        <p>&copy; All Right Reserved By <a href="https://vk.com/ol9gang" target="_blank">Nikolaeva Olga</a></p>
     </form>
   </body>
 </html>

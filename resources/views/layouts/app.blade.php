@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--template title-->
-    <title>MAHPOEN - Personal Portfolio HTML Template</title>
+    <title>Car shop</title>
 
     <!--==========Favicon==========-->
 
@@ -84,7 +84,7 @@
                     <div class="main-menu">
                         <div class="navbar navbar-cus">
                             <div class="navbar-header">
-                                <a href="index.html" class="navbar-brand"><span class="logo">mason</span></a> <!--edit site name here-->
+                                <a href="{{url('/')}}" class="navbar-brand"><span class="logo">Car shop</span></a> <!--edit site name here-->
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -96,7 +96,7 @@
                             <div class="navbar-collapse collapse">
                                 <nav>
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li>Привет, {{Auth::user()->email}}</li>
+                                        <li>Hi, {{Auth::user()->email}}</li>
                                         <li class="active"><a href="#home">Home</a></li>
                                         <li><a href="#cars">Cars</a></li>
                                         <li><a href="#contact-form">Contact</a></li>
@@ -130,10 +130,9 @@
                                     <h1 class="ah-headline">
 
                                         <span class="ah-words-wrapper">
-                                            <b class="is-visible">Mason Smith</b> <!--edit the name to your name-->
-                                            <b>Web Designer</b> <!--edit the designation if you are in different profession-->
-                                            <b>Photographer</b> <!--edit the designation if you are in different profession-->
+                                            <b class="is-visible">This is a good job</b> <!--edit the name to your name-->
                                             <b>Web Developer</b> <!--edit the designation if you are in different profession-->
+                                            <b>Здесь может быть ваша реклама</b> <!--edit the designation if you are in different profession-->
                                         </span>
                                     </h1>
 
