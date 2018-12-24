@@ -197,37 +197,7 @@
 
     <!--Footer Area Starts-->
 
-                        <div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
-                            <div class="row">
-                                <div class="col-md-7 col-xs-12">
-                                    <div class="por-img">
-                                        <img src="/temp/images/portfolio/port1.png" alt="portfolio image" class="img-responsive"> <!--edit image-->
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-xs-12">
-                                    <div class="por-text">
-                                        <h2></h2> <!--your project title-->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, delectus deserunt eum eveniet, illo iste magni nobis non omnis quia</p>
-                                        <div class="por-text-details">
-                                            <div class="row">
-                                                <div class="col-xs-4">
-                                                    <p>Client: </p>
-                                                    <p>Completed:</p>
-                                                    <p>Type:</p>
-                                                    <p>link:</p>
-                                                </div>
-                                                <div class="col-xs-offset-1 col-xs-7">
-                                                    <p>Дод ру</p> <!--edit here-->
-                                                    <p>15/03/2018</p> <!--edit here-->
-                                                    <p>WordPress Site</p> <!--edit here-->
-                                                    <p>www.reebok.com</p> <!--edit here-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
 
              <div class="row">
 

@@ -27,29 +27,31 @@ class ArticlesController extends Controller
     }
     public function addRequestArticle(ArticleRequest $request)
     {
-    	dd($request->all());
-        $objArticle = new Article();
-       // $objCategoryArticle = new CategoryArticle();
+    
+       $objArticle = new Article();
+       //$objCategoryArticle = new CategoryArticle();
        $fullText = $request->input('full_text') ?? null;
        $objArticle= $objArticle->create([
-           // 'categories_id'=>(int)$request->input('categories'),
+           'categories_id'=>(int)$request->input('categories'),
            'title'       => $request->input('title'),
            'short_text'  => $request->input('short_text'),
            'full_text'   => $fullText,
            'author'      => $request->input('author')
        ]);
-       if($objArticle) {
-           foreach($request->input('categories') as $category_id) {
-               $category_id = (int)$category_id;
+       //if($objArticle) {
+       //    foreach($request->input('categories') as $category_id) {
+       //        $category_id = (int)$category_id;
        //         $objCategoryArticle = $objCategoryArticle->create([
        //             'category_id'    => $category_id,
        //             'article_id'     => $objArticle->id
        //         ]);
-           }
-           return redirect()->route('articles')->with('success', 'Статья успешно добавлена');
-       }
-       return back()->with('error' , 'Не удалось добавить статью');
+           //}
+          
+       //}
+       //return back()->with('error' , 'Не удалось добавить статью');
+      return redirect()->route('articles')->with('success', 'Статья успешно добавлена');
     }
+
     public function editArticle(int $id)
     {
         $objCategory = new Category();
