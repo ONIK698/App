@@ -18,8 +18,8 @@
 // });
 //Route::get('/', 'CategoriesController@index');
 Route::get('/', 'AccountController@index');
-
-
+Route::resource('queries', 'SearchController');
+Route::post('/account/art', 'SearchController@search');
 //blog
 Route::get('/article/{id}/{slug}.html','CategoriesController@showCategory')->name('blog.show');
 

@@ -6,9 +6,12 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-header wow fadeInDown" data-wow-delay="0.2s">
-            <p class="line-one"></p>
-            <!-- <h2>My Works</h2> -->
-            <p class="line-one"></p>
+
+            {!! Form::open(array('rout' => 'queries.search', 'class'=>'form navbar-form navbar-right searchform')) !!}
+            {!! Form::text('search', null,array('class'=>'form-control','placeholder'=>'search by product name')) !!}
+            {!! Form::submit('Search',array('class'=>'btn btn-default')) !!}
+         {!! Form::close() !!}
+
           </div>
         </div>
       </div>
@@ -19,10 +22,12 @@
             <div >
               <div >
                 <i></i>
+
                   <a href="#">
                     <!-- <br><br><br><br><br><br><br><br><br><br> -->
                         <h2>{!!$category->title!!}</h2>
                   <a/>
+
                     @foreach($articles as $article)
                       <?php
                         if(foo($article)==$category->id){
